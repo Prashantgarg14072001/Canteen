@@ -1,0 +1,120 @@
+/* middle section */
+
+.section-middle {
+    position: relative;
+    margin-top: 70px;
+}
+
+.left-gids-agile {
+    background: #ffe5e5;
+    padding: 8em 24em 6em 10em;
+  
+
+}
+
+h4.bottom-title-w3ls {
+    line-height: 1.6;
+    font-size: 28px;
+    border-bottom: 2px solid #deb8b8;
+}
+
+.left-gids-agile i {
+    font-size: 60px;
+}
+
+img.img-fluid.img-posi {
+    position: absolute;
+    right: 33%;
+    top: 14%;
+}
+
+.w3ls-right {
+    background: url(../images/bg2.jpg) no-repeat bottom;
+    background-size: contain;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -ms-background-size: contain;
+}
+
+.agile-width {
+    max-width: 550px;
+    float: right;
+    padding: 5em 6em;
+}
+
+/* //middle section */
+
+
+/*--responsive--*/
+
+
+
+/*--responsive--*/
+
+@media(max-width: 800px){
+    h4.bottom-title-w3ls {
+        font-size: 26px;
+    }
+    .left-gids-agile i {
+        font-size: 50px;
+    }
+    .left-gids-agile {
+        padding: 5em 8em 3em 2em;
+        min-height: 558px;
+    }
+    img.img-fluid.img-posi {
+        right: 32%;
+    }
+    .kb_wrapper {
+        min-height: 419px;
+    }
+    .kb_caption h3 {
+        font-size: 36px;
+    }
+}
+
+@media(max-width: 767px){
+
+}
+@media(max-width: 736px){
+    .about-bottom h4 {
+        font-size: 38px;
+    }
+    .section-middle .d-flex, .d-flex.skill_info_wthree_agile {
+        display: inline-block !important;
+    }
+    .left-gids-agile {
+        padding: 4em 4em 10em;
+        min-height: auto;
+    }
+    .agile-width {
+        padding: 6em 4em 10em;
+        float: none;
+    }
+    img.img-fluid.img-posi {
+        right: 34%;
+        top: 33%;
+    }
+   
+@media(max-width: 667px){
+    img.img-fluid.img-posi {
+        right: 30%;
+        width:40%;
+    }
+  
+}
+
+/*--//responsive--*/
+@media(max-width: 568px){
+    p {
+        font-size: 17px;
+    }
+    .w3ls-section-features {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+   
+}
+
+/*--//responsive--*/

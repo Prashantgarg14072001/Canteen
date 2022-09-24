@@ -1,0 +1,54 @@
+
+/*-- services --*/  
+.services
+{
+
+}
+.w3l-services-grid{
+	text-align:center;
+}
+.w3ls-services-img{
+    width: 90px;
+    height: 90px; 
+	margin: 0 auto;
+    /*border:2px solid #9c00e6;*/
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;     
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+	transition: 0.5s all;
+}
+.w3ls-services-img i.fa{ 
+    color:#faa59e;
+    font-size: 4em;
+    padding: .4em 0 0 0;  
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+	transition: 0.5s all;
+}
+.agileits-services-info h4 {
+    color: #f45e91;
+    font-size: 1.5em;
+    margin: 0.8em 0;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.w3l-services-grid:hover .w3ls-services-img{
+    background:linear-gradient(to left, #fcbdb8,#ec8dad);  
+}
+.w3l-services-grid:hover .w3ls-services-img i.fa {
+    color: #fff; 
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-o-transform: scale(0.5);
+	-ms-transform: scale(0.5);
+    transform: scale(0.5);
+}
+/*-- //services --*/

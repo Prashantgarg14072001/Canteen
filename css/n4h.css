@@ -1,0 +1,294 @@
+a:hover
+{
+  text-decoration: none;
+}
+.header
+{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 150px;
+  /*padding-top: 10px ;*/
+}
+.nav
+{
+  display: flex;
+  justify-content: center;
+  padding: 1px 30px;
+  position: absolute;
+/*margin-bottom: -60px;*/
+  transform: all 0.3s;
+  box-shadow: 0 20px 20px #f3a2b2;
+  background:#fff;
+  border-bottom: 2px dotted #f3a2b2;
+  z-index: 9;
+  top: 0;
+  width: 100%;
+}
+
+.nav ul
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav ul li
+{
+  flex-wrap: wrap;
+  list-style-type:none;
+}
+.nav ul li a
+{
+  font-family: serif;
+  font-size:20px;
+  color: red;
+  padding: 0.25rem 0;
+  margin: 0 2rem;
+  text-transform: uppercase;
+}
+.nav ul li.logo .black
+{
+  display: none;
+}
+.nav ul li.logo a
+{
+  margin: 0 4rem;
+}
+.nav-icon
+{
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  padding: 5px;
+  width: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
+.nav-icon span
+{
+  background: #333;
+  width: 30px;
+  height: 1px;
+  display: block;
+  transition: 300ms linear all;
+}
+.nav-icon span:nth-child(1),
+.nav-icon span:nth-child(3)
+{
+width: 20px;
+margin: 0 auto;
+}
+.nav-icon span:nth-child(2)
+{
+  width: 32px;
+  margin: 5px 0;
+}
+.nav-icon:hover span:nth-child(1),
+.nav-icon:hover span:nth-child(3)
+{
+width: 30px;
+}
+.full-nav
+{
+  background: linear-gradient(#f3a2b2,#f9b5b6);
+  color: #18191d;
+  position: fixed;
+  left: 0;
+  top: 4px;
+  height: 90%;
+  width: 100%; 
+  padding: 3.75rem;
+  z-index: 99;
+  overflow-x:hidden;
+  visibility: hidden;
+  opacity: 0;
+transform: translateY(-100px);
+transition: all .4s ease-in-out;
+
+}
+.full-nav.open
+{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: all .4s ease-in-out;
+  z-index: 99;
+}
+.full-nav.logo
+{
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+}
+
+.nav2
+{
+display: flex;
+justify-content: center;
+margin-top: 2%;
+
+}
+.nav2 ul
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+
+}
+.nav2 ul li
+{
+  display: flex;
+  flex: 50%;
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-bottom: 10px solid #ff1637;
+  border-right: 10px solid  #f3a2b2;
+  transition: all .5s;
+ margin-bottom: 2%;  color: #333; border-radius: 50px;
+}
+.nav2 ul li a
+{
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #18191d;
+}
+.nav2 ul li a span
+{
+  color: #b9b9b9;
+}
+.nav2 ul li:hover
+{
+  background: #ff1637;
+   border-bottom: 10px solid #f5f5f5;
+}
+.nav2 ul li:hover a,
+.nav2 ul li:hover a span
+{
+  color: #fff;
+}
+
+.social-icons a
+{
+  color: #333;
+  border:3px solid white;
+  width: 80px;
+  min-height: 70px;
+  line-height: 40px;
+  font-size: 30px;
+  display: inherit;
+  padding-top: 12%;
+  text-align: center;
+  border-radius: 50px;
+  transform: all ease 1s;
+  margin-top: 10px;
+}
+.social-icons a:hover i
+{
+  color: #f5f5f5;
+  /*margin-top: -20px;*/
+  border-color:#ff1637;
+  background: #ff1637;
+
+}
+.social-icons a:hover 
+{
+  color: #f5f5f5;
+  /*margin-top: -20px;*/
+  border-color: #000;
+background: #ff1637;
+}
+ul.social-icons.list-inline
+{
+  text-align: center;
+  /*margin-top: 22px;*/
+}
+.list-inline > li
+{
+ display: inline-block;
+ padding-right: 5px;
+ padding-left: 5px;
+}
+.corner-circle
+{
+  position: absolute;
+  top:0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 0 0 0 120px;
+  z-index: 2;
+}
+.nav-close
+{
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.nav-close span
+{
+  background: #18181d;
+  width: 30px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  top: 14px;
+}
+.nav-close span:nth-child(1)
+{
+  transform: rotate(45deg);
+}
+.nav-close span:nth-child(2)
+{
+  transform: rotate(-45deg);
+}
+
+@keyframes animationFade
+{
+  from
+  {
+    opacity: 0;
+    -webkit- transform:translate3d(0, -100%,0);
+  
+    transform:translate3d(0, -100%,0);
+  }
+  to
+  {
+    opacity: 1;
+    transform: none;
+     -webkit-transform:none;
+     -o-transform:none;
+      }
+}
+.nav.sticky
+{
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(#f3a2b2,#f9b5b6);;
+  box-shadow: 0 10px 10px -10px rgba(0,0,0,.35);
+  animation-name: animationFade;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.nav.sticky a
+{
+  color: #18191d;
+}
+.nav.sticky ul li.logo .white
+{
+  display: none;
+}
+.nav.sticky ul li.logo .black
+{
+  display: inline-block;
+
+}
+.nav.sticky .nav-icon span
+{
+  background: #18191d;
+
+}
