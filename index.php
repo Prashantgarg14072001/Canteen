@@ -224,7 +224,7 @@ margin-left: 30px;
     }
     .aa2
     {
-        min-height: 500px;
+        min-height: 450px;
         background-image: url('img/banner1.jpg');
         background-repeat: no-repeat;
         border-radius: 100%;
