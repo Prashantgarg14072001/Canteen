@@ -8,7 +8,7 @@ $email = $password = $pwd = '';
 
 $email = $_POST['email'];
 $pwd = $_POST['password'];
-$password = MD5($pwd);
+$password = ($pwd);
 $sql = "SELECT * FROM tbluser WHERE Email='$email' AND Password='$password'";
 $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result) > 0)

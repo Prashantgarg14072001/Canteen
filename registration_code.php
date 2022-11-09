@@ -10,7 +10,7 @@ $lname = $_POST['lastname'];
 $gender = $_POST['gender'];
 $email = $_POST['email'];
 $pwd = $_POST['password'];
-$password = MD5($pwd);
+$password = ($pwd);
 
 $sql = "INSERT INTO tbluser(Firstname,Lastname,Gender,Email,Password) VALUES ('$fname','$lname','$gender','$email','$password')";
 $result = mysqli_query($conn, $sql);

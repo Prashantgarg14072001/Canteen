@@ -59,7 +59,7 @@
           	</tr>
           	<tr>
           		<td>Gender</td>
-          		<td><?php echo $gender; ?></td>
+          		<td><?php echo $Gender; ?></td>
           	</tr>
           	<tr>
           		<td>Email</td>
